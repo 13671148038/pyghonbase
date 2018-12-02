@@ -1,7 +1,7 @@
 try:
     6 / 0
-except Exception:
-    print(34)
+except Exception as e:
+    print(e)
 else:
     print('很好')
 finally:
