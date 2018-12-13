@@ -94,7 +94,7 @@ print(list_2)
 # 结尾处删除
 list_2.pop()
 print(list_2)
-# 开始出删除
+# 开始处删除
 list_2.popleft()
 print(list_2)
 
