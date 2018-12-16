@@ -1,4 +1,3 @@
-
 # python 中变量定义有三个范围
 # 第一个就是直接定义如:spam = "local spam"  这个变量的范围就是只在定义范围内 称为局部作用域
 # 第二个定义的关键字:nonlocal spam  外层函数的局部作用域就是在方法do_nonlocal外层可以用
@@ -22,7 +21,6 @@ def scope_test():
     print(spam)
     do_global()
     print(spam)
-
 
 
 scope_test()
