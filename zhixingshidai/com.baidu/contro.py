@@ -15,8 +15,30 @@ for x in raw_data:
     if math.isnan(x):
         print(x)
 
-a = 9
-b = 0
-while b < a:
-    print(b)
-    b = b + 1
+# break  continue
+import operator
+
+arr = list(range(9))
+for i in arr:
+    if operator.eq(i, 6):
+        break
+    elif operator.eq(i, 4):
+        continue
+    else:
+        print(i)
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n // x)
+        break
+    else:
+        # loop fell through without finding a factor 如果range(2, n)是是空的就是走else这里
+        print(n, 'is a prime number')
+
+for a in []:
+    print(a)
+else:
+    # 会走这里,因为数组为空
+    print('sdcs')
+
